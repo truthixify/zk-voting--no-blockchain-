@@ -1,0 +1,31 @@
+{
+  "name": "@veravote/crypto",
+  "version": "1.0.0",
+  "description": "Cryptographic library for Veravote voting system",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "demo": "npx ts-node demo.ts",
+    "benchmark": "npm run build && node dist/benchmarks/VoterMerkleTree.bench.js"
+  },
+  "dependencies": {
+    "@noble/curves": "^1.9.7",
+    "@noble/hashes": "^1.8.0",
+    "@semaphore-protocol/group": "^4.14.0",
+    "@semaphore-protocol/identity": "^4.14.0",
+    "@semaphore-protocol/proof": "^4.14.0",
+    "fixed-merkle-tree": "^0.7.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+coverage/
+benchmark-results/
+*.log
+.DS_Store

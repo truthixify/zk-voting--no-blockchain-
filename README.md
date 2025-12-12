@@ -1,4 +1,4 @@
-# Veravote Crypto Library
+# ZK Voting Crypto Library
 
 Clean, object-oriented API for anonymous voting with Semaphore + ElGamal.
 
